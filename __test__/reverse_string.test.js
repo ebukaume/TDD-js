@@ -8,10 +8,10 @@ it('returns the string in the reverse order', () => {
 });
 
 it('throws an error for non string inputs', () => {
-  const originalString = 1;
-  try {
+  const badCall = () => {
+    const originalString = 1;
     reverseString(originalString);
-  } catch (error) {
-    expect(error).toEqual(new Error('Input is not a string!'));
   }
+  
+  expect(badCall).toThrow(new Error('Input is not a string!'));
 });

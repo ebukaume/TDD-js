@@ -15,10 +15,11 @@ it('capitalizes multiple words in a sentence', () => {
 });
 
 it('throws an error for non string inputs', () => {
-  const originalString = 1;
-  try {
+  const badCall = () => {
+    const originalString = 1;
     capitalize(originalString);
-  } catch (error) {
-    expect(error).toEqual(new Error('Input is not a string!'));
   }
+  
+  expect(badCall).toThrow(new Error('Input is not a string!'));
 });
+
