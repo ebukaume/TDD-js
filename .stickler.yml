@@ -3,4 +3,4 @@ linters:
     config: './eslint.config'
 files:
   ignore:
-    'jest.config.js'
+    './jest.config.js'
