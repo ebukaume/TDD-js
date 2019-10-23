@@ -16,3 +16,7 @@ it('keeps the same case', () => {
 it('returns non alphapet characters unshifted', () => {
   expect(caesar.cipher({ string: 'a!@#$%^&*()C', shift: 1 })).toBe('b!@#$%^&*()D');
 });
+
+it('handles spicial letters as normal letters', () => {
+  expect(caesar.cipher({ string: 'abcéèêüöàxyz', shift: 1 })).toBe('bcdfffvpbyza');
+});
