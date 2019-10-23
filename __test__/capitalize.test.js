@@ -13,3 +13,12 @@ it('capitalizes multiple words in a sentence', () => {
 
   expect(capitalizedString).toBe('FirstString SecondWord');
 });
+
+it('throws an error for non string inputs', () => {
+  const originalString = 1;
+  try {
+    capitalize(originalString);
+  } catch (error) {
+    expect(error).toEqual(new Error('Input is not a string!'));
+  }
+});
