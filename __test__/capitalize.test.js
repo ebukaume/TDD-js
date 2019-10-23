@@ -18,8 +18,7 @@ it('throws an error for non string inputs', () => {
   const badCall = () => {
     const originalString = 1;
     capitalize(originalString);
-  }
-  
+  };
+
   expect(badCall).toThrow(new Error('Input is not a string!'));
 });
-
