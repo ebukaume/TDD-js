@@ -20,14 +20,14 @@ it('returns the product of integers', () => {
   expect(calculator.divide(455, 10, 5)).toBe(9.1);
 });
 
-it('returns the  product of floats', () => {
+it('returns the product of floats', () => {
   expect(calculator.divide(120.5, 10, 5)).toBeCloseTo(2.41);
 });
 
-it('returns the product of integers', () => {
+it('returns the quotient of integers', () => {
   expect(calculator.multiply(10, 455 * 5)).toBe(22750);
 });
 
-it('returns the  product of floats', () => {
+it('returns the quotient of floats', () => {
   expect(calculator.multiply(10.2, 100 * 5.5)).toBeCloseTo(5610);
 });
