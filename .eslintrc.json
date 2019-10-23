@@ -1,7 +1,8 @@
 {
     "env": {
         "browser": true,
-        "es6": true
+        "es6": true,
+        "jest": true
     },
     "extends": [
         "airbnb-base"
@@ -11,9 +12,13 @@
         "SharedArrayBuffer": "readonly"
     },
     "parserOptions": {
-        "ecmaVersion": 2018,
-        "sourceType": "module"
+        "ecmaVersion": 2018
     },
     "rules": {
+      "no-shadow": 0,
+      "no-param-reassign": 0,
+      "eol-last": 0,
+      "arrow-parens": [2,"always"],
+      "import/extensions":[ 1,"ignorePackages"]
     }
-}
+  }
